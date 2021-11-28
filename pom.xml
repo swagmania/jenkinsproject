@@ -10,5 +10,31 @@
     <artifactId>myfirsttcsrioproject_1</artifactId>
 
     <version>1.0.0</version>
-
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+         </plugins>
+    </build>
+         
+    <repositories>
+        <repository>
+            <id>myMavenRepo.read</id>
+            <url>https://mymavenrepo.com/repo/FN8PIshHk5uALNhkXbhs/</url>
+        </repository>
+    </repositories>
+         
+    <distributionManagement>
+        <repository>
+            <id>myMavenRepo.write</id>
+            <url>https://mymavenrepo.com/repo/9Q8JoRpymi4UGK8HzbVq/</url>
+        </repository>
+    </distributionManagement>
+         
 </project>
